@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Adopt an Animal</title>
+    <link rel="stylesheet" href="adp.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -18,27 +18,80 @@
         </ul>
     </nav>
 
-    <!-- Registration Form -->
-    <section class="registration-form">
-        <h1>Register</h1>
-        <form action="submit_registration.html" method="POST">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" required>
+    <!-- Search Bar -->
+    <section class="search-bar">
+        <input type="text" id="search-input" placeholder="Search by location...">
+        <button onclick="searchAnimals()">Search</button>
+    </section>
 
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-
-            <button type="submit">Register</button>
-        </form>
+    <!-- Animal Tiles -->
+    <section class="animal-tiles" id="animal-tiles">
+        <!-- Example Animal Tile -->
+      
+        <div class="animal-tile">
+            <img src="./img/husky.jpg" alt="Animal Photo">
+            <h3>Dooba</h3>
+            <p>Location: Rochester, New York
+                <br>
+               <br>
+               P.NO = +91 9050843779
+            </p>
+        </div>
+        <div class="animal-tile">
+            <img src="./img/parrrot.jpg" alt="Animal Photo">
+            <h3>Rebel</h3>
+            <p>Location: Toronto, Canada
+                <br>
+               <br>
+               P.NO = +91 9050843779
+            </p>
+        </div>
+        <div class="animal-tile">
+            <img src="./img/cat.JPG" alt="Animal Photo">
+            <h3>Melborn</h3>
+            <p>Location: Binghamton, New York
+                <br>
+               <br>
+               P.NO = +91 9050843779
+            </p>
+        </div>
+        <div class="animal-tile">
+            <img src="./img/cow.jpg" alt="Animal Photo">
+            <h3>MATA</h3>
+            <p>Location: Sydney, Australia
+                <br>
+               <br>
+               P.NO = +91 9050843779
+            </p>
+        </div>
+        <div class="animal-tile">
+            <img src="./img/horse.jpg" alt="Animal Photo">
+            <h3>Zuzu</h3>
+            <p>Location: Haryana, India
+               <br>
+               <br>
+               P.NO = +91 9050843779
+            </p>
+        </div>
+        <div class="animal-tile">
+            <img src="./img/squirrel.jpg" alt="Animal Photo">
+            <h3>Gillu</h3>
+            <p>Location: Melbourne, Australia
+                <br>
+               <br>
+               P.NO = +91 9050843779
+            </p>
+        </div>
+        <div class="animal-tile">
+            <img src="./img/animal1.jpg" alt="Animal Photo">
+            <h3>Jamun</h3>
+            <p>Location: Mumbai, India
+                <br>
+               <br>
+               P.NO = +91 9050843779
+            </p>
+        </div>
+       
     </section>
 
     <!-- Footer -->
@@ -46,6 +99,6 @@
         <p>&copy; 2024 Animal Adoption Center. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="adp.js"></script>
 </body>
 </html>
