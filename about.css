@@ -7,6 +7,7 @@ body {
 nav {
     background-color: #3e44eb;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -14,24 +15,29 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0;
 }
 
 nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px ;
     text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
     background-color: #787ce9;
+    border-radius: 4px;
+    transform: scale(1.05);
 }
+
 
 .about-us {
     padding: 20px;
@@ -49,4 +55,11 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+@media (max-width: 450px) {
+    nav{
+      font-size: small;
+    
+    }
 }

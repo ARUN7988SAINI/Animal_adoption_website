@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function searchAnimals() {
         const query = searchInput.value.toLowerCase();
 
-        animalTiles.forEach(tile => {
+        animalTiles.forEach((tile) => {
             const location = tile.querySelector("p").textContent.toLowerCase();
             if (location.includes(query)) {
                 tile.style.display = "block";

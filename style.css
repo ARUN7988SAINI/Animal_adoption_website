@@ -8,6 +8,9 @@ body {
     height: 50vh;
     width: 98vw;
 }
+#img2{
+    width: 96vw;
+}
 
 nav {
     background-color: #3e44eb;
@@ -31,7 +34,7 @@ nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 14px ;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
@@ -116,3 +119,22 @@ nav ul li a:hover {
 .footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 450px) {
+   nav{
+     font-size: small;
+   }
+  .homeimg{
+        height: 28vh;
+        width: 100vw;
+    }
+    #img2{
+        width: 90vw;
+    }
+    .slider{
+        height: 15vh;
+        width: 100vw;
+    }
+
+   }
+
